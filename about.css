@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black !important;
+    color: wheat;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    background-color: rgba(111, 3, 21, 0.753);
+}
+
+.logo {
+    color: rgb(206, 38, 66);
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 20px 20px;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+.logo span{
+    color: white;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.links ul {
+    font-family: "Tomorrow", sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 50px !important;
+    /* margin-top: 27px; */
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.links ul li a {
+    color: rgb(253, 76, 105) !important;
+}
+
+.links ul li a:hover {
+    color: red;
+    border: 3px solid rgb(255, 0, 72);
+    width: 10px;
+}
+
+
+/* aboutme */
+
+.about-section{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    padding: 28px ;
+}
+.about-heading{
+    /* margin-top: 28px; */
+    padding: 29px;
+    margin-top: 5%;
+}
+
+ img {
+    margin-top: 20px;
+    width: 450px;
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow:  10px 10px 90px red, -10px -10px 90px red;
+}
+.about-heading h1,h2{
+    font-family: "Bla ck Ops One", system-ui !important;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.about-heading span{
+    /* font-family: "Bla ck Ops One", system-ui; */
+    color: rgb(234, 8, 8);
+    font-size: 68px;
+    font-weight: 700;
+}
+
+.about-heading p{
+    margin-top: 20px;
+    font-size: 23px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: rgba(239, 57, 57, 0.952);
+}
+
+.icons-about {
+    margin-top: 20px;
+    display: flex;      
+    gap: 20px;          
+    align-items: center;
+}
+
+.icons-about i {
+    color:rgb(130, 9, 9) ; 
+    font-size: 40px !important; 
+    /* background: gray;  */
+    padding: 10px;
+    /* display: inline-block;  */
+}
+
+.icons-about a:hover {
+    color: #ff2a2a; /* Hover pe bright red */
+    text-shadow: 0 0 10px #ff2a2a, 0 0 20px #ff2a2a; 
+}
+
+
+@media (max-width: 1024px) {
+
+    header {
+        gap: 40px;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+
+    .links ul {
+        gap: 30px !important;
+        font-size: 18px;
+    }
+
+    .about-section {
+        gap: 20px;
+    }
+
+    .about-section img {
+        width: 350px;
+    }
+
+    .about-section h1 {
+        font-size: 48px !important;
+    }
+
+    .about-section p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+
+    .links ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px !important;
+        font-size: 16px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-heading {
+        margin-left: 0;
+    }
+
+    .about-section img {
+        width: 280px;
+    }
+
+    .about-section h1 {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .icons-about i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 24px;
+        letter-spacing: 3px;
+    }
+
+    .about-section img {
+        width: 220px;
+    }
+
+    .about-section h1 {
+        font-size: 1.5rem;
+    }
+
+   
+    .about-section p {
+        font-size: 14px;
+    }
+      .icons-about i {
+        font-size: 20px !important;
+    }
+
+}
